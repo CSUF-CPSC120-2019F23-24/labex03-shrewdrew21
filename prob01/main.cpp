@@ -10,9 +10,9 @@ int main()
   char my_char2 = 0x43; // hex
   char my_char3 = 'C';  // character
 
-  std::cout << "Char1: " << my_char1 << std::endl;
-  std::cout << "Char2: " << my_char2 << std::endl;
-  std::cout << "Char3: " << my_char3 << std::endl;
+  std::cout << "36" << my_char1 << std::endl;
+  std::cout << "0x39" << my_char2 << std::endl;
+  std::cout << 'A' << my_char3 << std::endl;
 
   std::cout << std::endl; // blank line to separate the different exercises
 
@@ -21,6 +21,10 @@ int main()
   // however, use a different method to do so for each cout statement
   // hint: use the ASCII character set
   std::cout << "+" << std::endl;
+  std::cout << "80" << my_char1 << std::endl;
+  std::cout << "0x50" << my_char2 << std::endl;
+  std::cout << 'P' << my_char3 << std::endl;
+
 
   std::cout << std::endl; // blank line to separate the different exercises
 
@@ -33,14 +37,18 @@ int main()
 
   // TODO#4: try changing the variable types and the data types in the
   // statements below to see what is returned by the sizeof operator
-  bool my_bool = 1;
-  std::cout << my_bool << ' ' << sizeof(my_bool) << '\n';
-  short my_int = 1;
-  std::cout << my_int << ' ' << sizeof(my_int) << '\n';
+  bool my_bool = "23";
+  std::cout << my_bool << "23" << sizeof(my_bool) << '\n';
+  short my_int = 46;
+  std::cout << my_int << 46 << sizeof(my_int) << '\n';
 
   double amount;
-  std::cout << "A float is stored in " << sizeof(float) << " bytes\n";
-  std::cout << "The variable \"amount\" is stored in " << sizeof(amount) << " bytes\n";
+  std::cout
+    << "A float is stored in "
+    << sizeof(float) << " bytes\n";
+  std::cout
+    << "The variable \"amount\" is stored in "
+    << sizeof(amount) << " bytes\n";
 
   return 0;
 }
